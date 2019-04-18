@@ -1,0 +1,47 @@
+{{#bs-navbar class="navbar navbar-expand-lg navbar-dark pr-4 pl-4 pt-3 pb-3" as |navbar|}}
+  <div class="container">
+    {{#link-to "home" class="navbar-brand"}}
+      <div class="row m-0 p-0">
+        <img src="assets/images/logo.png" class="logo" alt="404">
+        <span class="ml-2 ptc-1">Erasmus+</span>
+      </div>
+    {{/link-to}}
+    {{navbar.toggle}}
+    {{#navbar.content}}
+      {{#navbar.nav class="ml-auto" as |nav|}}
+        {{#nav.item class="mr-3"}}
+          {{#nav.link-to "home" class="navigation-link"}}
+            <i class="material-icons">
+              home
+            </i>
+            Home
+          {{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item class="mr-3"}}
+          {{#nav.link-to "program" class="navigation-link"}}
+            <i class="material-icons">
+              library_books
+            </i>
+            Our Program
+          {{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item class="mr-3"}}
+          {{#nav.link-to "apply" class="navigation-link"}}
+            <i class="material-icons">
+              how_to_reg
+            </i>
+            Apply
+          {{/nav.link-to}}
+        {{/nav.item}}
+        {{#nav.item}}
+          {{#nav.link-to "about-us" class="navigation-link"}}
+            <i class="material-icons">
+              info
+            </i>
+            About Us
+          {{/nav.link-to}}
+        {{/nav.item}}
+      {{/navbar.nav}}
+    {{/navbar.content}}
+  </div>
+{{/bs-navbar}}
