@@ -434,3 +434,12 @@ footer p a span {
   line-height: 25px;
   margin: 20px 100px 60px 100px;
 }
+
+@media(max-width: 768px) {
+  .section-title p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 20px 10px 60px 10px;
+  }
+}
